@@ -1,0 +1,62 @@
+/*=============================================================================
+Header
+=============================================================================*/
+
+.navbar {
+    padding: rem(10);
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    transition: all $trans-time;
+    border-radius: 0;
+
+    +above(768px) {
+        padding: rem(20) rem(30);
+    }
+
+    &.is-fixed {
+        background: rgba($black, $op-black);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        position: fixed;
+
+        .navbar-brand {
+            max-width: rem(50);
+        }
+
+        .navbar-menu {
+            height: rem(40);
+        }
+    }
+}
+
+.navbar-brand {
+    max-width: rem(80);
+    padding: 0;
+    transition: all $trans-time;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.navbar-menu {
+    height: rem(63.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all $trans-time;
+}
+
+.nav-link {
+    @extend $btm-bd-anim;
+    
+    +below(768px) {
+        font-size: rem(24);
+        margin-right: rem(10);
+
+        &::after {
+            content: '';
+        }
+    }
+}

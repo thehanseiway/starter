@@ -1,0 +1,54 @@
+/*=============================================================================
+Basic
+=============================================================================*/
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Gotham';
+    color: $black
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: rem(15);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    &:not(:first-child) {
+        margin-top: rem(40);
+    }
+}
+
+button:focus {
+    outline: 0;
+}
+
+.form-control,
+input[type="email"],
+input[type="text"] {
+    border-radius: 0;
+    transition: all $trans-time;
+    border: 1px solid $grey;
+
+    &:focus {
+        border: 1px solid $black;
+    }
+}
+
+textarea {
+    height: 100px;
+}

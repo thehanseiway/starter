@@ -1,0 +1,61 @@
+<header class="header">
+
+    <!-- #Navigation -->
+    <nav id="js-navbar" class="navbar navbar-dark">
+        <div class="container">
+            <div class="navbar-nav nav">
+
+                <!-- #Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="/src/images/logo.png" alt="">
+                </a>
+                <!-- /Logo -->
+
+                <!-- #Menu -->
+                <div class="navbar-menu">
+                    <a
+                        class="nav-item nav-link {{#ifpage 'index'}}active{{/ifpage}}"
+                        data-hover="Home"
+                        href="index.html">
+                        <span class="hidden-md-up">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <span class="hidden-sm-down">Home</span>
+                    </a>
+                    <a
+                        class="nav-item nav-link {{#ifpage 'gallery'}}active{{/ifpage}}"
+                        data-hover="Gallery"
+                        href="gallery.html">
+                        <span class="hidden-md-up">
+                            <i class="fa fa-camera"></i>
+                        </span>
+                        <span class="hidden-sm-down">Gallery</span>
+                    </a>
+                    <a
+                        class="nav-item nav-link {{#ifpage 'about'}}active{{/ifpage}}"
+                        data-hover="About me"
+                        href="about.html">
+                        <span class="hidden-md-up">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <span class="hidden-sm-down">About me</span>
+                    </a>
+                    <a
+                        class="nav-item nav-link {{#ifpage 'contacts'}}active{{/ifpage}}"
+                        data-hover="Contacts"
+                        href="contacts.html">
+                        <span class="hidden-md-up">
+                            <i class="fa fa-paper-plane"></i>
+                        </span>
+                        <span class="hidden-sm-down">Contacts</span>
+
+                    </a>
+                </div>
+                <!-- /Menu -->
+
+            </div>
+        </div>
+    </nav>
+    <!-- /Navigation -->
+
+</header>

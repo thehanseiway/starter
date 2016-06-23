@@ -1,0 +1,22 @@
+{
+  "name": "lobster",
+  "description": "Simpals project lobster lightweight",
+  "main": "index.js",
+  "authors": [
+    "wladislaw <thehanseiway@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "imagesloaded": "~4.1.0",
+    "font-awesome": "~4.6.2",
+  }
+}
