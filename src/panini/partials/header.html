@@ -1,61 +1,26 @@
 <header class="header">
 
-    <!-- #Navigation -->
-    <nav id="js-navbar" class="navbar navbar-dark">
+    <nav class="navbar">
         <div class="container">
-            <div class="navbar-nav nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
 
-                <!-- #Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="/src/images/logo.png" alt="">
-                </a>
-                <!-- /Logo -->
-
-                <!-- #Menu -->
-                <div class="navbar-menu">
-                    <a
-                        class="nav-item nav-link {{#ifpage 'index'}}active{{/ifpage}}"
-                        data-hover="Home"
-                        href="index.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-home"></i>
-                        </span>
-                        <span class="hidden-sm-down">Home</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'gallery'}}active{{/ifpage}}"
-                        data-hover="Gallery"
-                        href="gallery.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-camera"></i>
-                        </span>
-                        <span class="hidden-sm-down">Gallery</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'about'}}active{{/ifpage}}"
-                        data-hover="About me"
-                        href="about.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-user"></i>
-                        </span>
-                        <span class="hidden-sm-down">About me</span>
-                    </a>
-                    <a
-                        class="nav-item nav-link {{#ifpage 'contacts'}}active{{/ifpage}}"
-                        data-hover="Contacts"
-                        href="contacts.html">
-                        <span class="hidden-md-up">
-                            <i class="fa fa-paper-plane"></i>
-                        </span>
-                        <span class="hidden-sm-down">Contacts</span>
-
-                    </a>
-                </div>
-                <!-- /Menu -->
-
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <a class="navbar-brand" href="#"><img src="/dist/img/logo.png" alt=""></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!-- /Navigation -->
 
 </header>
